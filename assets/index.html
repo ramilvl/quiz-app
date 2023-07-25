@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <img src="./img/picture.png" />
+
+        <h1>Welcome! We are really honored to have you here.</h1>
+
+        <p>
+          Your Quest to Excel! Gain vast knowledge and ace homework challenges
+          as you journey through Edu-Verse. Get personalized feedback to sharpen
+          problem-solving skills!
+        </p>
+      </div>
+
+      <div id="inputForm">
+        <div class="right">
+          <div class="right-upper-structure">
+            <div class="login-text">
+              <h1>LOG IN</h1>
+            </div>
+
+            <div class="user-info-structure">
+              <div class="user-info">
+                <div class="user-info-left">
+                  <img src="./img/name.png" />
+                </div>
+
+                <div class="user-info-right">
+                  <input type="text" id="firstName" placeholder="First Name" />
+                </div>
+              </div>
+
+              <div class="user-info-below">
+                <div class="user-info-left-below">
+                  <img src="./img/name.png" />
+                </div>
+
+                <div class="user-info-right-below">
+                  <input type="text" id="lastName" placeholder="Last Name" />
+                </div>
+              </div>
+
+              <div class="btn">
+                <button onclick="saveUserInfo()">Start</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="login-button"></div>
+
+          <div class="small-text"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="quiz-question">
+      <div id="quizContainer" style="display: none">
+        <h2>Quiz Question:</h2>
+        <p id="question">What is the capital of France?</p>
+        <label>
+          <input type="radio" name="answer" value="Paris" />
+          <span>Paris</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="answer" value="London" />
+          <span>London</span>
+        </label>
+        <br />
+        <label>
+          <input type="radio" name="answer" value="Berlin" />
+          <span>Berlin</span>
+        </label>
+        <br />
+        <button onclick="submitAnswer()">Submit Answer</button>
+      </div>
+
+      <div id="quizResult" style="display: none">
+        <img src="./img/firework.jpg" />
+        <h2>Result:</h2>
+        <p id="result"></p>
+      </div>
+    </div>
+
+    <script src="quiz.js"></script>
+  </body>
+</html>
