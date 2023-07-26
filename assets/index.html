@@ -4,81 +4,84 @@
     <title>Quiz App</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+
   <body>
     <div class="container">
-      <div class="left">
-        <img src="./img/picture.png" />
-
-        <h1>Welcome! We are really honored to have you here.</h1>
-
-        <p>
-          Your Quest to Excel! Gain vast knowledge and ace homework challenges
-          as you journey through Edu-Verse. Get personalized feedback to sharpen
-          problem-solving skills!
-        </p>
-      </div>
 
       <div id="inputForm">
-        <div class="right">
-          <div class="right-upper-structure">
-            <div class="login-text">
-              <h1>LOG IN</h1>
-            </div>
-
-            <div class="user-info-structure">
-              <div class="user-info">
-                <div class="user-info-left">
-                  <img src="./img/name.png" />
-                </div>
-
-                <div class="user-info-right">
-                  <input type="text" id="firstName" placeholder="First Name" />
-                </div>
-              </div>
-
-              <div class="user-info-below">
-                <div class="user-info-left-below">
-                  <img src="./img/name.png" />
-                </div>
-
-                <div class="user-info-right-below">
-                  <input type="text" id="lastName" placeholder="Last Name" />
-                </div>
-              </div>
-
-              <div class="btn">
-                <button onclick="saveUserInfo()">Start</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="login-button"></div>
-
-          <div class="small-text"></div>
+        
+        <div class="input-form-left width-50 p-35px">
+          <img class="width-240px" src="./img/picture.png" />
+  
+          <h1 class="text-size-45px line-height-1-5 mt-50px">Welcome! We are really honored to have you here.</h1>
+  
+          <p class="line-height-1-5 text-size-25px mt-50px">
+            Your Quest to Excel! Gain vast knowledge and ace homework challenges
+            as you journey through Edu-Verse. Get personalized feedback to sharpen
+            problem-solving skills!
+          </p>
         </div>
-      </div>
-    </div>
 
-    <div class="quiz-question">
-      <div id="quizContainer" style="display: none">
-        <h2>Quiz Question:</h2>
-        <p id="question">What is the capital of France?</p>
-        <label>
-          <input type="radio" name="answer" value="Paris" />
-          <span>Paris</span>
-        </label>
-        <br />
-        <label>
-          <input type="radio" name="answer" value="London" />
-          <span>London</span>
-        </label>
-        <br />
-        <label>
-          <input type="radio" name="answer" value="Berlin" />
-          <span>Berlin</span>
-        </label>
-        <br />
-        <button onclick="submitAnswer()">Submit Answer</button>
+        <div class="input-form-right p-100px">
+              <h1 class="text-size-60px font-400">LOG IN</h1>
+              
+              <div class="width-375px height-55px bg-black border-radius-20px p-10px align-justify-center mt-10px">
+                <i class="icon icon-user"></i>
+                <input class="text-size-25px width-310px bg-black border-none pl-12px color-white" type="text" id="firstName" placeholder="First Name" />
+              </div>
+
+              <div class="width-375px height-55px bg-black border-radius-20px p-10px align-justify-center mt-10px">
+                <i class="icon icon-user"></i>
+                <input class="text-size-25px width-310px bg-black border-none pl-12px color-white" type="text" id="lastName" placeholder="Last Name" />
+              </div>
+              
+                
+              <div class="btn width-185px p-15px mt-10px height-55px align-justify-center border-radius-20px pointer">
+                <button class="text-size-25px bg-black bg-green border-none pointer" onclick="saveUserInfo()">Start</button>
+              </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+    
+      <div id="quizContainer" class="p-10px" style="display: none">
+
+        <div class="p-35px border-2px">
+          <span class="text-size-25px font-400">SIn recent years, the popularity of electric vehicles (EVs) has surged, driven by their environmental benefits and technological advancements. EVs produce lower emissions compared to conventional internal combustion engine vehicles, helping to combat air pollution and reduce greenhouse gas contributions. Additionally, advancements in battery technology have improved the range and charging capabilities of EVs, making them more practical for daily use. As electric vehicle adoption continues to grow, one question arises: What are the key factors influencing the widespread adoption of electric vehicles, and how can we further encourage their integration into the mainstream automotive market?</span>
+        </div>
+
+        <div class="quiz-body p-100px">
+          <h2 class="text-size-18px pb-10px">Quiz Question:</h2>
+          <p id="question" class="text-size-25px mb-12px">What is a significant environmental advantage of electric vehicles over conventional vehicles?</p>
+          <div class="label-structure">
+            <label>
+              <input type="radio" name="answer" value="Higher fuel efficiency" />
+              <span>Higher fuel efficiency</span>
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="answer" value="Lower emissions" />
+              <span>Lower emissions</span>
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="answer" value="Faster acceleration" />
+              <span>Faster acceleration</span>
+            </label>
+            <br />
+            <label>
+              <input type="radio" name="answer" value="Greater cargo capacity" />
+              <span>Greater cargo capacity</span>
+            </label>
+          </div>
+          <button class="text-size-25px bg-black border-none pointer border-radius-20px height-55px color-white" onclick="submitAnswer()">Submit Answer</button>
+        </div>
+
       </div>
 
       <div id="quizResult" style="display: none">
@@ -86,7 +89,8 @@
         <h2>Result:</h2>
         <p id="result"></p>
       </div>
-    </div>
+
+  </div>
 
     <script src="quiz.js"></script>
   </body>

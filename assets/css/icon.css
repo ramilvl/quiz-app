@@ -1,0 +1,15 @@
+.icon {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.icon-user{
+    background-image: url('../img/name.png');
+}

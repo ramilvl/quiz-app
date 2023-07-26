@@ -33,21 +33,29 @@ function saveUserInfo() {
 const quizData = [
   {
     question: 'What is the capital of France?',
-    options: ['Paris', 'London', 'Berlin'],
-    answer: 'Paris',
+    options: ['Higher fuel efficiency', 'Lower emissions', 'Faster acceleration', 'Greater cargo capacity'],
+    answer: 'Lower emissions',
   },
   {
-    question: 'Which planet is closest to the Sun?',
-    options: ['Venus', 'Mercury', 'Mars'],
-    answer: 'Mercury',
+    question: 'Which technological advancement has contributed to the increased practicality of electric vehicles?',
+    options: ['Improved fuel injection systems', 'Enhanced brake technology', 'Advancements in battery technology', 'Upgraded tire materials'],
+    answer: 'Advancements in battery technology',
   },
   {
-    question: 'What is the Arabic word for "Peace"?',
-    options: ['Salam', 'Shukran', 'Marhaba'],
-    answer: 'Salam',
+    question: 'What role do electric vehicles play in combating climate change??',
+    options: ['Increasing greenhouse gas emissions', 'Reducing air pollution', 'Enhancing deforestation', 'Intensifying ozone depletion'],
+    answer: 'Reducing air pollution',
   },
-  // Add more questions and answers as needed
-  // Make sure each question has different variants and the correct answer is one of the options
+  {
+    question: 'What is a crucial aspect that influences the adoption of electric vehicles by consumers?',
+    options: ['Availability of gas station infrastructure', 'Complexity of electric vehicle maintenance', 'Government incentives and rebates', 'Production of loud engine noises'],
+    answer: 'Government incentives and rebates',
+  },
+  {
+    question: 'How have advancements in battery technology affected electric vehicles?',
+    options: ['Reduced the range and charging capabilities', 'Increased the weight and decreased acceleration', 'Improved the range and charging capabilities', ' Hindered the performance and safety features'],
+    answer: 'Improved the range and charging capabilities',
+  },
 ];
 
 let currentQuestion = 0;
