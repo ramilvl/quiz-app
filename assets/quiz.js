@@ -11,6 +11,24 @@ function saveUserInfo() {
     lastName: lastName,
   };
 
+  fetch('/saveUserInfo', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(userInfo),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log('Response from server:', data);
+      // Assuming the server responds with the saved user information
+      // Update the UI or proceed with quiz questions here
+      // ...
+    })
+    .catch((error) => {
+      console.error('Error sending user information to the server:', error);
+    });
+
   // Assuming you'll fetch data from the server here instead of directly using quizData
   // Replace the following line with the actual fetch to your server
   // For now, we'll just use the provided quizData array for testing
@@ -31,11 +49,6 @@ function saveUserInfo() {
 
 // Sample Quiz Questions and Answers
 const quizData = [
-  {
-    question: 'What is the capital of France?',
-    options: ['Higher fuel efficiency', 'Lower emissions', 'Faster acceleration', 'Greater cargo capacity'],
-    answer: 'Lower emissions',
-  },
   {
     question: 'Which technological advancement has contributed to the increased practicality of electric vehicles?',
     options: ['Improved fuel injection systems', 'Enhanced brake technology', 'Advancements in battery technology', 'Upgraded tire materials'],
