@@ -45,37 +45,4 @@ input:focus::placeholder {
 #quizContainer input[type='radio'] { 
     margin-right: 10px;
     transform: scale(1.5); 
-} 
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* 
-#quizResult h2{
-    font-size: 55px;
-    margin-bottom: 10px;
 }
-
-#quizResult p{
-    font-size: 35px;
-    color: red;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-#quizResult img{
-    position: absolute;
-    left: 20%;
-    bottom: 160%;
-    width: 450px;
-    height: auto;
-    border-radius: 25px;
-} */

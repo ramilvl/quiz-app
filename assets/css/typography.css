@@ -6,6 +6,10 @@
     font-size: 18px;
 }
 
+.text-size-21px{
+    font-size: 21px;
+}
+
 .text-size-25px{
     font-size: 25px;
 }
@@ -87,6 +91,10 @@
     margin-top: 10px;
 }
 
+.mt-20px{
+    margin-top: 20px;
+}
+
 .mt-50px{
     margin-top: 50px;
 }
@@ -116,4 +124,12 @@
 
 .border-2px{
     border: 2px dotted black;
+}
+
+.text-align{
+    text-align: center;
+}
+
+.line-space{
+    line-height: 1.5;
 }
